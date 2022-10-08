@@ -24,15 +24,13 @@ class Boton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        color: Colors.purple[400],  
+        color: Colors.purple[400],
         padding: const EdgeInsets.all(10),
-          child: const Text("Sou um boton",
-          style: TextStyle(
-            fontSize: 20.0,
-            color: Colors.black
-          ),
-          ),
+        child: const Text(
+          "Sou um boton",
+          style: TextStyle(fontSize: 20.0, color: Colors.black),
         ),
+      ),
     );
   }
 }
