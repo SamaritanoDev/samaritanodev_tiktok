@@ -1,3 +1,4 @@
+import 'package:appcolor/const/colors.dart';
 import 'package:flutter/material.dart';
 
 class CardPeque extends StatelessWidget {
@@ -5,23 +6,25 @@ class CardPeque extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ListTile(
-      title: Text(
-        'Widgets de flutter',
-        style: TextStyle(
-          color: Color(0xff0336ff),
+    return ListTile(
+        title: const Text(
+          'Widgets de flutter',
+          style: TextStyle(
+            color: ColorsMyApp.primarycolor,
+          ),
         ),
-      ),
-      subtitle: Text(
-        'stack, card, listTile',
-        style: TextStyle(
-          color: Color(0xff0336ff),
+        subtitle: const Text(
+          'stack, card, listTile',
+          style: TextStyle(
+            color: ColorsMyApp.tertiarycolor,
+          ),
         ),
-      ),
-      trailing: Icon(
-        Icons.arrow_forward_ios,
-        color: Color(0xff0336ff),
-      ),
-    );
+        trailing: IconButton(
+          onPressed: () => Navigator.pushNamed(context, '/cardImage'),
+          icon: const Icon(
+            Icons.arrow_forward_ios,
+            color: ColorsMyApp.primarycolor,
+          ),
+        ));
   }
 }
