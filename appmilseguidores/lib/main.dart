@@ -75,7 +75,7 @@ class _GrandState extends State<Grand> {
 class CardBanner extends StatelessWidget {
   const CardBanner({Key? key}) : super(key: key);
   final String url =
-      'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/721afeeb256ebe659591c8dd7b6864d6~c5_100x100.jpeg?x-expires=1657940400&x-signature=fMUZq3rumDOn559ga6g65GPszHA%3D';
+      'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/07589dd06754b5e2023a8ff2f9413a32~c5_100x100.jpeg?x-expires=1679248800&x-signature=qutVe0kDGcDR6zEPFiYRaJKFJYM%3D';
 
   @override
   Widget build(BuildContext context) {
